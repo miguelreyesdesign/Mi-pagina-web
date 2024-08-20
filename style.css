@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.containerP {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 80%;
+    height: auto;
+    padding: 1em;
+    gap: 1em;
+}
+.present{
+    overflow: hidden;
+}
+/* ------------EFECTO BLUR---------- */
+.glass {
+    display: grid;
+    place-items: center;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));
+    box-shadow: 2px 2px 6px rgb(20, 20, 20);
+}
+/* ------- IMAGENES ---------- */
+.yo{
+    max-width: 55%;
+    object-fit: cover;
+    margin: 10% 50% 0 0;
+    filter: drop-shadow(0 0 5px  rgba(0, 0, 0, 0.8));
+}
+
+.clima {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 2em;
+}
+.tareas {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 2em;
+}
+
+.tec{
+    width: 40px;
+    height: 40px;
+    filter: drop-shadow(0 0 4px  rgba(252, 252, 252, 0.3));
+    cursor: pointer;
+    margin: 2%;
+    transition: all ease .3s;
+}
+.tec:hover{
+    scale: 1.2;
+}
+
+.ikon:hover{
+    transform: rotateY(360deg);
+    transition: 1s ease;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* ----------NOMBRE--------- */
+
+.nombre{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 0 0 0 50%;
+    font-size: 90%;
+}
+
+
+
+.yellow{
+    color: #ffff00;
+    
+    /* text-shadow: 1.5px 1.5px rgba(252, 252, 252, 0.5); */
+}
+.a{
+    text-decoration: none;
+}
+
+/* ---------pdf descarga ----------- */
+.pdf-link{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    margin: 40% 0 40% 0;
+}
+
+.descarga{
+    object-fit: cover;
+    max-width: 50%;
+    max-height: 50%;
+    filter: drop-shadow(0 0 5px  rgba(252, 252, 252, 0.3));
+}
+/* ---------------PARALLAX ---------- */
+
+.ikon2{
+    object-fit: cover;
+    filter: drop-shadow(0 0 5px  rgba(252, 252, 252, 0.3));
+    cursor: pointer;
+}
+
+.pr2 {
+    text-align: center;
+}
+
+.pr2 img{
+    padding-top: 3%;
+    max-width: 40%;
+    max-height: 40%;
+
+}
+
+
+.tecnologias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0 7%;
+}
+
+/* ----------CLOUMNAS Y FILAS-------- */
+.col-left, .col-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.row {
+    flex: 1;
+    border-radius: 2em;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.col {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border-radius: 2em;
+}
+
+.pr {
+    flex: 1;
+    border-radius: 2em;
+}
+/* ------------reponsive-------------- 768 */
+@media screen and (max-width: 1020px) {
+    /* .container {
+        width: 100%;
+        flex-direction: column;
+        flex: 1;
+    } */
+    .row2 {
+        flex-direction: column;
+    }
+    .pr{
+        width: 100%;
+        flex-direction: row;
+    }
+    .container {
+        max-height: 200px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .containerP{
+        flex-direction: column;
+    }
+    .col-right{
+        flex-direction: column;
+    }
+    .present{
+        margin: 40% 0 0 0;
+    }
+    .DM{
+        background: none;
+        backdrop-filter: blur(0);
+        box-shadow: none;
+        position: absolute;
+        top: 0;
+        right: 15%;
+    }    
+}

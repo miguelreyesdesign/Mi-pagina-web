@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark-mode/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="lluvia/lluvia.css">
+    <title>MReyes</title>
+</head>
+<body>
+    <div class="containerP">
+        <!-- col-left -->
+        <div class="col-left">
+            <!-- row1 -->
+            <div class="row row1 glass present">
+                <img class="yo" src="img/m3.png" alt="">
+                <div class="nombre">
+                    <h1>Creador <br> de sitios web <br> free lance</h1>
+                    <div class="yellow">
+                        <p>M. Angel <br> M. Reyes</p>
+                    </div>
+                
+                </div>
+            </div>
+            <!-- row2 -->
+            <div class="row row2">
+                <!----------------- lluvia-- ------------- -->
+                <div class="col col2 glass container" id="container1">
+                    <canvas id="canvas1"></canvas>
+                </div>
+                <div class="col col">
+                    <div class="pr glass">
+                        <a href="https://miguelreyesdesign.github.io/app-clima/" target="_blank">   
+                            <img class="clima" src="img/clima.png" alt=""> 
+                        </a>
+                    </div>
+                    <div class="pr glass">
+                        <a href="https://miguelreyesdesign.github.io/lista-de-tareas/" target="_blank"> 
+                            <img class="tareas" src="img/tareas.png" alt=""> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- col-right -->
+        <div class="col-right">
+            <!-- row3 -->
+            <div class="row row2">
+                <div class="col">
+                    <div class="pr glass DM">
+                        <!-- DARK MODE -->
+                        <div class="containerdm">
+                            <button class="yellow dmb" id="dark-mode-toggle">☼</button>
+                        </div>
+                    </div>
+                    <div class="pr glass">
+                        <div class="pdf">
+                            <a href="pdf/Cv2.pdf" download class="pdf-link">
+                                <p class="yellow">Descarga mi CV</p><br>
+                                <img class="descarga ikon" src="img/download-solid.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- --------------- lluvia------2 ------------ -->
+                <div class="col col2 glass container" id="container2">
+                    <canvas id="canvas2"></canvas>
+                    <button class="yellow" id="toggleButton"></button>
+                </div>
+            </div>
+            <!-- row4 -->
+            <div class="row row2">
+                <div class="col">
+                    <div class="pr pr2 glass">
+                        <a class="a" href="https://www.linkedin.com/in/miguel-angel-miranda-reyes-781907290/" target="_blank">
+                            <p class="yellow">Visita mi perfil de Linkedin:</p>
+                            <img src="img/linkedin-in.svg" class="ikon2 ikon" alt="">
+                        </a>
+                    </div>
+                    <div class="pr glass tecnologias">
+                        <span>
+                            <img src="img/icons/002-html-5.png" class="tec" alt="">
+                            <p>HTML5</p>
+                        </span>
+                        <span>
+                            <img src="img/icons/001-css.png" class="tec" alt="">
+                            <p>CSS</p>
+                        </span>
+                        
+                        <span>
+                            <img src="img/icons/003-js.png" class="tec" alt="">
+                            <p>Javascript</p>
+                        </span>
+                        <span>
+                            <img src="img/icons/001-github.png" class="tec" alt="">
+                            <p>Github</p>
+                        </span>
+                        <span>
+                            <img src="img/icons/002-git.png" class="tec" alt="">
+                            <p>Git</p>
+                        </span>
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="pr pr2 glass">
+                        <a class="a" href="https://wa.me/5654903790?text=Hola%20me%20interesa%20un%20citio%20web" target="_blank">
+                            <p class="yellow">Enviame un mensaje por whatsapp:</p>
+                            <img src="img/whatsapp (1).png" class="ikon2 ikon" alt="">
+                        </a>
+                    </div>
+                    <div class="pr glass tecnologias">
+                        <p class="progres yellow">aprendiendo:</p>
+                        <span>
+                            <img src="img/icons/003-ciencia.png" class="tec" alt="">
+                            <p>React JS</p>
+                        </span>
+                        <span>
+                            <img src="img/icons/004-piton.png" class="tec" alt="">
+                            <p>Python</p>
+                        </span>
+                        <span>
+                            <img src="img/icons/005-servidor-sql.png" class="tec" alt="">
+                            <p>SQL</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dark-mode/script.js"></script>
+    <script src="lluvia/lluvia.js"></script>
+</body>
+</html>

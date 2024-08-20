@@ -1,0 +1,31 @@
+canvas {
+    width: 90%;
+    height: 90%;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+}
+
+#toggleButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #5555558e;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all ease .5s;
+    
+}
+
+#toggleButton:hover {
+    background-color: #555;
+    color: white;
+}

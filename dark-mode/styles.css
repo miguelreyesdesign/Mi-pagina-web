@@ -1,0 +1,39 @@
+/* ------DARK MODE----- */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    transition: background-color 0.5s ease;
+    background-color: #1c1c1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerdm {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    font-size: 80px;
+    border: none;
+    background: transparent;
+    
+    border-radius: 5px;
+    cursor: pointer;
+}
+.yellow{
+    color: #ffff00;
+}
+.dark-mode{
+    background-color: rgb(217, 218, 219);
+    color: black;
+}
+.dark-mode .yellow{
+    color: rgb(43, 82, 160);
+}
+
+
+
